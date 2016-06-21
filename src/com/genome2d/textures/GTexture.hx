@@ -72,6 +72,8 @@ class GTexture extends GTextureBase
 				var parent:GTexture = cast g2d_source;
 				parent.onInvalidated.add(parentInvalidated_handler);
 				parent.onDisposed.add(parentDisposed_handler);
+				premultiplied = parent.premultiplied;
+				g2d_atfType = parent.g2d_atfType;
 				g2d_gpuWidth = parent.g2d_gpuWidth;
 				g2d_gpuHeight = parent.g2d_gpuHeight;
 				g2d_nativeWidth = parent.g2d_nativeWidth;
